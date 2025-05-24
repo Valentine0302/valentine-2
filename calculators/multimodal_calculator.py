@@ -15,7 +15,7 @@ import argparse
 from datetime import datetime
 
 # Константы
-DATA_DIR = '.\\data'
+DATA_DIR = 'data'
 DEFAULT_CONTAINER_TYPE = '40hc'
 DEFAULT_WEIGHT = 20000
 VOLATILITY_ALPHA = 1.2  # Коэффициент волатильности для нелинейной формулы
