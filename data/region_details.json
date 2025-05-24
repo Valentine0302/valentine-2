@@ -1,0 +1,290 @@
+{
+  "DK-1": {
+    "region_code": "DK-1",
+    "country_code": "DK",
+    "admin_name": "Central Jutland, Region Hovedstaden, Region Nordjylland, South Denmark, Zealand, Region Syddanmark, North Denmark, Region Midtjylland, Capital Region",
+    "center_lat": 55.757585418464195,
+    "center_lon": 11.494501207937878,
+    "postal_codes_count": 1159
+  },
+  "LV-1": {
+    "region_code": "LV-1",
+    "country_code": "LV",
+    "admin_name": "Ventspils, Jurmala, Liepaja, Valkas nov., Ādažu nov., Alūksnes nov., Olaines nov., Valmiera, Rezekne, Salaspils nov., Jelgava, Varakļānu nov., Smiltenes nov., Daugavpils",
+    "center_lat": 57.03717743902438,
+    "center_lon": 25.007451219512195,
+    "postal_codes_count": 164
+  },
+  "LV-2": {
+    "region_code": "LV-2",
+    "country_code": "LV",
+    "admin_name": "Kuldīgas nov., Ķekavas nov., Saulkrastu nov., Mārupes nov., Ogres nov., Riga, Gulbenes nov., Valmieras nov., Aizkraukles nov., Limbažu nov., Saldus nov., Ropažu nov., Dobeles nov., Siguldas nov.",
+    "center_lat": 56.994768716094036,
+    "center_lon": 24.29979529837251,
+    "postal_codes_count": 553
+  },
+  "LV-3": {
+    "region_code": "LV-3",
+    "country_code": "LV",
+    "admin_name": "Tukuma nov., Krāslavas nov., Bauskas nov., Dienvidkurzemes nov., Jēkabpils nov., Balvu nov., Jelgavas nov., Madonas nov., Līvānu nov., Preiļu nov., Augšdaugavas nov., Talsu nov., Cēsu nov., Ventspils nov.",
+    "center_lat": 56.40350499113999,
+    "center_lon": 26.382657324276433,
+    "postal_codes_count": 3386
+  },
+  "LV-4": {
+    "region_code": "LV-4",
+    "country_code": "LV",
+    "admin_name": "Ludzas nov., Rēzeknes nov.",
+    "center_lat": 56.50765515515516,
+    "center_lon": 27.49596216216216,
+    "postal_codes_count": 1998
+  },
+  "MT-1": {
+    "region_code": "MT-1",
+    "country_code": "MT",
+    "admin_name": "Dingli, Il-Birgu, Birżebbuġa, Il-Furjana, Balzan, Il-Belt Valletta, Il-Gżira, Bormla, Il-Fgura, Birkirkara, Attard, Il-Gudja, Il-Fontana",
+    "center_lat": 35.89169230769231,
+    "center_lon": 14.467015384615383,
+    "postal_codes_count": 13
+  },
+  "MT-2": {
+    "region_code": "MT-2",
+    "country_code": "MT",
+    "admin_name": "Is-Swieqi, Ix-Xagħra, Ix-Xgħajra, Ir-Rabat, Il-Mosta, Il-Qrendi, In-Nadur, Il-Qala, Ix-Xewkija, Il-Mellieħa, Il-Ħamrun, Is-Siġġiewi, In-Naxxar",
+    "center_lat": 35.94108461538461,
+    "center_lon": 14.394653846153847,
+    "postal_codes_count": 13
+  },
+  "MT-3": {
+    "region_code": "MT-3",
+    "country_code": "MT",
+    "admin_name": "L-Għasri, L-Isla, L-Imtarfa, L-Imsida, L-Imdina, Kirkop, Iż-Żejtun, L-Għarb, L-Imġarr, L-Iklin, Iż-Żurrieq, Lija, L-Imqabba",
+    "center_lat": 35.90748461538461,
+    "center_lon": 14.419723076923075,
+    "postal_codes_count": 13
+  },
+  "MT-4": {
+    "region_code": "MT-4",
+    "country_code": "MT",
+    "admin_name": "Pembroke, Saint Paul’s Bay, Marsaskala, Saint Venera, Saint Lawrence, Saint Julian's, Marsaxlokk, Safi, Saint Lucia, Luqa, Qormi, Saint John, Paola",
+    "center_lat": 35.895715384615386,
+    "center_lon": 14.46767692307692,
+    "postal_codes_count": 13
+  },
+  "MT-5": {
+    "region_code": "MT-5",
+    "country_code": "MT",
+    "admin_name": "Għajnsielem, Il-Kalkara, Victoria, Sannat, Ħal Għargħur, Ħaż-Żebbuġ, Ta’ Kerċem, Ħal Għaxaq, Tal-Pietà, Ħaż-Żabbar, Tas-Sliema, Tarxien, Ta’ Xbiex",
+    "center_lat": 35.93579999999999,
+    "center_lon": 14.420119999999999,
+    "postal_codes_count": 15
+  },
+  "MT-6": {
+    "region_code": "MT-6",
+    "country_code": "MT",
+    "admin_name": "Iż-Żebbuġ, Il-Munxar, Il-Marsa",
+    "center_lat": 35.990766666666666,
+    "center_lon": 14.320733333333335,
+    "postal_codes_count": 6
+  },
+  "ES-1": {
+    "region_code": "ES-1",
+    "country_code": "ES",
+    "admin_name": "Cantabria, Pais Vasco, Andalucia, Castilla - La Mancha, Extremadura, Ceuta, Canarias, Cataluna, Galicia, Castilla - Leon, Asturias, Melilla, Comunidad Valenciana, Baleares, Navarra, La Rioja, Aragon, Murcia, Madrid",
+    "center_lat": 41.05232155702855,
+    "center_lon": -4.888370570681596,
+    "postal_codes_count": 37867
+  },
+  "IE-1": {
+    "region_code": "IE-1",
+    "country_code": "IE",
+    "admin_name": "Connacht, Ulster, Leinster, Munster",
+    "center_lat": 53.06430287769785,
+    "center_lon": -7.505914388489209,
+    "postal_codes_count": 139
+  },
+  "BE-1": {
+    "region_code": "BE-1",
+    "country_code": "BE",
+    "admin_name": "Bruxelles-Capitale, Vlaanderen, Wallonie",
+    "center_lat": 50.644625062927005,
+    "center_lon": 4.560634196332255,
+    "postal_codes_count": 2781
+  },
+  "AT-1": {
+    "region_code": "AT-1",
+    "country_code": "AT",
+    "admin_name": "Niederösterreich, Salzburg, Tirol, Wien, Burgenland, Steiermark, Kärnten, Oberösterreich, Vorarlberg",
+    "center_lat": 47.757950213641394,
+    "center_lon": 14.380371852086302,
+    "postal_codes_count": 18957
+  },
+  "BG-1": {
+    "region_code": "BG-1",
+    "country_code": "BG",
+    "admin_name": "Враца / Vraca, Монтана / Montana, Русе / Ruse, Плевен / Pleven, Видин / Vidin, Варна / Varna, Шумен / Shumen, Пазарджик / Pazardzhik, Ямбол / Jambol, Силистра / Silistra, Ловеч / Lovech, Сливен / Sliven, София (столица) / Sofija (stolica), Разград / Razgrad",
+    "center_lat": 43.2247132884262,
+    "center_lon": 25.339186834047762,
+    "postal_codes_count": 1633
+  },
+  "BG-2": {
+    "region_code": "BG-2",
+    "country_code": "BG",
+    "admin_name": "Кърджали / Kurdzhali, Стара Загора / Stara Zagora, Благоевград / Blagoevgrad, София / Sofija, Велико Търново / Veliko Turnovo, Добрич / Dobrich, Хасково / Khaskovo, Пловдив / Plovdiv, Кюстендил / Kjustendil, Смолян / Smoljan, Бургас / Burgas, Търговище / Turgovishhe, Перник / Pernik, Габрово / Gabrovo",
+    "center_lat": 42.39647943339689,
+    "center_lon": 25.17507346771997,
+    "postal_codes_count": 3671
+  },
+  "DE-1": {
+    "region_code": "DE-1",
+    "country_code": "DE",
+    "admin_name": "Saxony, Schleswig-Holstein, Baden-Württemberg, Sachsen, Mecklenburg-Vorpommern, Rheinland-Pfalz, Hessen, Berlin, Bayern, Saarland, Brandenburg, Niedersachsen, Nordrhein-Westfalen, Thuringia, Mecklenburg-Western Pomerania, Hamburg, Land Berlin, Thüringen, Lower Saxony, Bavaria, Sachsen-Anhalt, Saxony-Anhalt, Bremen",
+    "center_lat": 51.06631659870369,
+    "center_lon": 10.000717796282784,
+    "postal_codes_count": 23297
+  },
+  "LU-1": {
+    "region_code": "LU-1",
+    "country_code": "LU",
+    "admin_name": "Capellen, Redange, Mersch, Echternach, Diekirch, Wiltz, Clervaux, Remich, Esch-sur-Alzette, Vianden, Grevenmacher, Luxembourg",
+    "center_lat": 49.646241646381945,
+    "center_lon": 6.096796570037619,
+    "postal_codes_count": 4519
+  },
+  "FI-1": {
+    "region_code": "FI-1",
+    "country_code": "FI",
+    "admin_name": "Kainuu, Ostrobothnia Region, Kanta-Häme, Päijänne Tavastia, North Karelia, North Ostrobothnia Region, Southwest Finland, Central Ostrobothnia Region, Pirkanmaa, Kymenlaakso, Southern Savonia, Northern Savo, Lapland, South Karelia, South Ostrobothnia Region, Uusimaa, Satakunta, Central Finland Region",
+    "center_lat": 62.35417905480985,
+    "center_lon": 25.29918039709172,
+    "postal_codes_count": 3576
+  },
+  "CY-1": {
+    "region_code": "CY-1",
+    "country_code": "CY",
+    "admin_name": "Pafos, Lemesos, Keryneia, Larnaka, Lefkosia, Ammochostos",
+    "center_lat": 35.0004902395741,
+    "center_lon": 33.17050665483584,
+    "postal_codes_count": 1127
+  },
+  "HU-1": {
+    "region_code": "HU-1",
+    "country_code": "HU",
+    "admin_name": "Vas, Pest, Borsod-Abaúj-Zemplén, Zala, Békés, Budapest, Nógrád, Csongrád, Győr-Moson-Sopron, Jász-Nagykun-Szolnok, Heves, Komárom-Esztergom, Hajdú-Bihar, Bács-Kiskun, Baranya, Szabolcs-Szatmár-Bereg, Fejér, Veszprém, Tolna, Somogy",
+    "center_lat": 47.21447418090171,
+    "center_lon": 18.997225343041162,
+    "postal_codes_count": 3571
+  },
+  "HR-1": {
+    "region_code": "HR-1",
+    "country_code": "HR",
+    "admin_name": "Vukovarsko-Srijemska, Brodsko-Posavska, Virovitičko-Podravska, Zadarska, Međimurska, Požeško-Slavonska, Bjelovarsko-Bilogorska, Zagrebačka, Karlovačka, Istarska, Ličko-Senjska, Grad Zagreb, Šibensko-Kninska, Dubrovačko-Neretvanska, Varaždinska, Primorsko-Goranska, Osječko-Baranjska, Krapinsko-Zagorska, Koprivničko-Križevačka, Splitsko-Dalmatinska, Sisačko-Moslavačka",
+    "center_lat": 45.25679341600237,
+    "center_lon": 16.106362666076173,
+    "postal_codes_count": 6774
+  },
+  "NL-1": {
+    "region_code": "NL-1",
+    "country_code": "NL",
+    "admin_name": "Utrecht, North Brabant, South Holland, North Holland, Drenthe, Guelders, Overijssel, Limburg, Flevoland, Friesland, Groningen, Zeeland",
+    "center_lat": 52.229786155976,
+    "center_lon": 5.489501038301799,
+    "postal_codes_count": 4334
+  },
+  "RO-1": {
+    "region_code": "RO-1",
+    "country_code": "RO",
+    "admin_name": "Vrancea, Harghita, Sălaj, Bistriţa-Năsăud, Tulcea, Caraş-Severin, Maramureş, Ialomiţa, Ilfov, Teleorman, Satu Mare, Covasna, Braşov, Călăraşi",
+    "center_lat": 46.04285485416667,
+    "center_lon": 24.995419249999998,
+    "postal_codes_count": 4800
+  },
+  "RO-2": {
+    "region_code": "RO-2",
+    "country_code": "RO",
+    "admin_name": "Suceava, Giurgiu, Brăila, Mehedinţi, Arad, Buzău, Dâmboviţa, Botoşani, Constanţa, Sibiu, Neamţ, Olt, Galaţi, Gorj",
+    "center_lat": 45.565065548417806,
+    "center_lon": 25.618323590292647,
+    "postal_codes_count": 8406
+  },
+  "RO-3": {
+    "region_code": "RO-3",
+    "country_code": "RO",
+    "admin_name": "Dolj, Bucureşti, Alba, Vaslui, Argeş, Prahova, Iaşi, Bacău, Mureş, Hunedoara, Vâlcea, Timiş, Bihor, Cluj",
+    "center_lat": 45.19267544619369,
+    "center_lon": 25.30369018171517,
+    "postal_codes_count": 24709
+  },
+  "IT-1": {
+    "region_code": "IT-1",
+    "country_code": "IT",
+    "admin_name": "Abruzzi, Marche, Liguria, Toscana, Basilicata, Lombardia, Campania, Emilia-Romagna, Piemonte, Calabria, Sardegna, Trentino-Alto Adige, Valle D'Aosta, Lazio, Friuli-Venezia Giulia, Puglia, Molise, Veneto, Sicilia, Umbria",
+    "center_lat": 43.44278112951399,
+    "center_lon": 11.72472464838447,
+    "postal_codes_count": 18415
+  },
+  "EE-1": {
+    "region_code": "EE-1",
+    "country_code": "EE",
+    "admin_name": "Jõgeva maakond, Võru maakond, Põlva maakond, Viljandi maakond, Harju maakond, Rapla maakond, Tartu maakond, Ida-Viru maakond, Saare maakond, Pärnu maakond, Järva maakond, Hiiu maakond, Lääne maakond, Valga maakond, Lääne-Viru maakond",
+    "center_lat": 58.654515153760656,
+    "center_lon": 25.40857801037421,
+    "postal_codes_count": 5398
+  },
+  "SE-1": {
+    "region_code": "SE-1",
+    "country_code": "SE",
+    "admin_name": "Halland, Stockholm, Dalarna, Värmland, Gävleborg, Norrbotten, Västra Götaland, Kalmar, Jönköping, Östergötland, Kronoberg, Södermanland, Västmanland, Uppsala, Blekinge, Västerbotten, Skåne, Gotland, Jämtland, Örebro, Västernorrland",
+    "center_lat": 58.98595739679507,
+    "center_lon": 15.540772816512789,
+    "postal_codes_count": 18846
+  },
+  "CZ-1": {
+    "region_code": "CZ-1",
+    "country_code": "CZ",
+    "admin_name": "Středočeský kraj, Zlínský kraj, Kraj Vysočina, Královéhradecký kraj, Olomoucký kraj, Jihočeský kraj, Plzeňský kraj, Hlavní město Praha, Jihomoravský kraj, Ústecký kraj, Moravskoslezský kraj, Karlovarský kraj, Liberecký kraj, Pardubický kraj",
+    "center_lat": 49.79964325143484,
+    "center_lon": 15.120456393886633,
+    "postal_codes_count": 15507
+  },
+  "SK-1": {
+    "region_code": "SK-1",
+    "country_code": "SK",
+    "admin_name": "Presov, Banska Bystrica, Kosice, Nitra, Bratislava, Trencin, Zilina, Trnava",
+    "center_lat": 48.61272304605389,
+    "center_lon": 19.193557538696734,
+    "postal_codes_count": 5233
+  },
+  "FR-1": {
+    "region_code": "FR-1",
+    "country_code": "FR",
+    "admin_name": "Bretagne, Centre-Val de Loire, Corse, Bourgogne-Franche-Comté, Occitanie, Pays de la Loire, Auvergne-Rhône-Alpes, Nouvelle-Aquitaine, Grand Est, Provence-Alpes-Côte d'Azur, Hauts-de-France, Île-de-France, Normandie",
+    "center_lat": 47.03025737342815,
+    "center_lon": 2.7320073337079305,
+    "postal_codes_count": 51611
+  },
+  "LT-1": {
+    "region_code": "LT-1",
+    "country_code": "LT",
+    "admin_name": "Tauragė County, Šiauliai County, Utena County, Alytus County, Klaipėda County, Vilniaus apskritis, Marijampolė County, Kaunas County, Telšių apskritis, Panevėžys",
+    "center_lat": 55.2647580704161,
+    "center_lon": 24.23087761316873,
+    "postal_codes_count": 21870
+  },
+  "PL-1": {
+    "region_code": "PL-1",
+    "country_code": "PL",
+    "admin_name": "Lublin, Opole Voivodeship, Lesser Poland, Świętokrzyskie, Warmia-Masuria, Greater Poland, Mazovia, Lower Silesia, Podlasie, Lubusz, Łódź Voivodeship, Subcarpathia, West Pomerania, Silesia, Pomerania, Kujawsko-Pomorskie",
+    "center_lat": 52.13602719067215,
+    "center_lon": 19.466421673525378,
+    "postal_codes_count": 72900
+  },
+  "PT-1": {
+    "region_code": "PT-1",
+    "country_code": "PT",
+    "admin_name": "Setúbal, Viseu, Braga, Porto, Madeira, Portalegre, Lisboa, Beja, Viana do Castelo, Aveiro, Guarda, Faro, Coimbra, Azores, Évora, Vila Real, Bragança, Leiria, Santarém, Castelo Branco",
+    "center_lat": 39.757946436199504,
+    "center_lon": -9.08479321935615,
+    "postal_codes_count": 206942
+  }
+}

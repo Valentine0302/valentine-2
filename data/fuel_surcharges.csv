@@ -1,0 +1,16 @@
+origin_region,destination_region,min_percent,max_percent,date_updated
+Asia,North America,15,25,2025-05-15
+Asia,Europe,12,22,2025-05-15
+Europe,North America,13,23,2025-05-15
+Asia,Middle East,10,20,2025-05-15
+Asia,Oceania,14,24,2025-05-15
+Europe,Asia,12,22,2025-05-15
+North America,Asia,15,25,2025-05-15
+Europe,Middle East,11,21,2025-05-15
+North America,Europe,13,23,2025-05-15
+Oceania,Asia,14,24,2025-05-15
+Middle East,Asia,10,20,2025-05-15
+Africa,Europe,12,22,2025-05-15
+Europe,Africa,12,22,2025-05-15
+South America,North America,14,24,2025-05-15
+North America,South America,14,24,2025-05-15

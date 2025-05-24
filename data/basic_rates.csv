@@ -1,0 +1,40 @@
+origin_region,destination_region,container_type,avg_rate,carriers,notes
+Asia,Europe,20dv,920,"MSC,CMA CGM,Maersk",+118% compared to previous values
+Asia,Europe,40hc,1750,"MSC,CMA CGM,Maersk",+118% compared to previous values
+Asia,North America W,20dv,2500,"MSC,CMA CGM,Maersk",+118% compared to previous values
+Asia,North America W,40hc,4200,"MSC,Drewry",New tariffs for subregions
+Asia,North America E,20dv,3200,"MSC,Drewry",New tariffs for subregions
+Asia,North America E,40hc,5400,"MSC,Drewry",New tariffs for subregions
+Asia,Mediterranean,20dv,1100,"Drewry,ShipHub",+132% compared to Q1 2025
+Asia,Mediterranean,40hc,2100,"Drewry,ShipHub",+132% compared to Q1 2025
+Asia,South America,20dv,2850,"Drewry,ShipHub",+132% compared to Q1 2025
+Asia,South America,40hc,3100,"Drewry,FBX",+141% compared to February
+Asia,Middle East,20dv,1350,"Drewry,FBX",+141% compared to February
+Asia,Middle East,40hc,2100,"Drewry,FBX",+141% compared to February
+Asia,Africa,20dv,1750,"Drewry,FBX",Stable indicators
+Asia,Africa,40hc,2050,"Drewry,FBX",Stable indicators
+Asia,Oceania,20dv,1900,"Drewry,FBX",Stable indicators
+Asia,Oceania,40hc,2650,"Drewry,local reports",+40% compared to 2024
+Asia,Intra-Asia,20dv,150,"Drewry,local reports",+40% compared to 2024
+Asia,Intra-Asia,40hc,280,"Drewry,local reports",+40% compared to 2024
+Europe,Asia,20dv,420,"Freightos,Drewry",New ports included
+Europe,Asia,40hc,800,"Freightos,Drewry",New ports included
+Europe,North America E,20dv,1850,"Freightos,Drewry",New ports included
+Europe,North America E,40hc,2100,"FBX,ShipHub",+25% compared to previous quarter
+Europe,North America W,20dv,2100,"FBX,ShipHub",+25% compared to previous quarter
+Europe,North America W,40hc,2600,"FBX,ShipHub",+25% compared to previous quarter
+Europe,Mediterranean,20dv,600,"MSC,local reports",Adjustment according to ECA
+Europe,Mediterranean,40hc,1000,"MSC,local reports",Adjustment according to ECA
+Europe,South America,20dv,1450,"MSC,local reports",Adjustment according to ECA
+Europe,South America,40hc,1750,"Drewry,MSC",+30% compared to 2024
+Europe,Africa,20dv,1200,"Drewry,MSC",+30% compared to 2024
+Europe,Africa,40hc,1700,"Drewry,MSC",+30% compared to 2024
+Europe,Middle East,20dv,1100,"Drewry,FBX",Decrease by 15% MoM
+Europe,Middle East,40hc,1800,"Drewry,FBX",Decrease by 15% MoM
+Europe,Oceania,20dv,2300,"Drewry,FBX",Decrease by 15% MoM
+Europe,Oceania,40hc,2650,"Drewry,local reports",UAE ports included
+North America E,Asia,20dv,470,"Drewry,local reports",UAE ports included
+North America E,Asia,40hc,900,"Drewry,local reports",UAE ports included
+North America W,Asia,20dv,500,"Drewry,ShipHub",+40% compared to 2024
+North America W,Asia,40hc,950,"Drewry,ShipHub",+40% compared to 2024
+Middle East,Asia,20dv,180,"Drewry,ShipHub",+40% compared to 2024

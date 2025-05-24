@@ -1,0 +1,111 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="calculator-form">
+    <form id="freight-form">
+        <div class="form-group">
+            <label for="origin-country">Origin Country (Europe):</label>
+            <select id="origin-country" name="origin-country" required>
+                <option value="">-- Select Country --</option>
+                {% for country in origin_countries %}
+                <option value="{{ country.code }}">{{ country.name }} ({{ country.code }})</option>
+                {% endfor %}
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="origin-zip">Origin ZIP Code:</label>
+            <input type="text" id="origin-zip" name="origin-zip" required>
+        </div>
+
+        <div class="form-group">
+            <label for="destination-city">Destination city:</label>
+            <select id="destination-city" name="destination-city" required>
+                <option value="">-- Select City --</option>
+                {% for city in asian_cities %}
+                <option value="{{ city.city }}|{{ city.country_code }}">{{ city.city }} ({{ city.country_code }})</option>
+                {% endfor %}
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="loading-meters">Loading Meters (1-10):</label>
+            <input type="number" id="loading-meters" name="loading-meters" step="0.1" min="1" max="10" required>
+        </div>
+
+        <div class="form-group">
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" name="weight" min="1" step="0.1" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <button type="submit" class="btn">Calculate</button>
+    </form>
+
+    <div id="result" style="display:none; margin-top:20px; padding:15px; background:#f8f9fa; border:1px solid #ccc; border-radius:5px;"></div>
+</div>
+
+<script>
+document.getElementById("freight-form").addEventListener("submit", async function (e) {
+    e.preventDefault();
+    email = document.getElementById("email").value.trim();
+    const [asiaCity, asiaCountry] = document.getElementById("destination-city").value.split("|");
+
+    const data = {
+        fromCountry: document.getElementById("origin-country").value,
+        fromZip: document.getElementById("origin-zip").value,
+        asiaCountry: asiaCountry,
+        asiaCity: asiaCity,
+        ldm: parseFloat(document.getElementById("loading-meters").value),
+        weight: parseFloat(document.getElementById("weight").value),
+        email: document.getElementById("email").value
+    };
+
+    const resultBox = document.getElementById("result");
+    resultBox.style.display = 'none';
+
+    try {
+        const response = await fetch("/api/calculate_rate_asia", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(data)
+        });
+
+        const result = await response.json();
+        if (response.ok) {
+            resultBox.innerHTML = `
+                <h4>Result</h4>
+                <p><strong>Distance:</strong> ${result.distance} km</p>
+                <p><strong>Chargeable LDM:</strong> ${result.chargeable_ldm}</p>
+                <p><strong>Total Freight Cost:</strong> <span style="color:green">€${result.total}</span></p>
+            `;
+        } else {
+            resultBox.innerHTML = `<p style="color:red;">Error: ${result.error}</p>`;
+        }
+
+        resultBox.style.display = 'block';
+
+        await fetch('/api/send_email', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                to: email,
+                subject: 'Your Asian Freight Calculation Result',
+                rate: result.total,
+                distance: result.distance,
+                chargeable_ldm: result.chargeable_ldm
+            })
+        });
+    } catch (err) {
+        resultBox.innerHTML = `<p style="color:red;">Unexpected error: ${err.message}</p>`;
+        resultBox.style.display = 'block';
+    }
+});
+</script>
+
+
+{% endblock %}

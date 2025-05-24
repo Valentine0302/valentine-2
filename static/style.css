@@ -1,0 +1,715 @@
+/* Основные стили для сайта TSP transport ou */
+
+/* Импорт шрифтов */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+/* Сброс стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Переменные с цветами эстонского флага */
+:root {
+    --primary-blue: #0072CE;
+    --secondary-black: #000000;
+    --background-white: #FFFFFF;
+    --accent-blue: #4DACFF;
+    --light-gray: #f5f5f5;
+    --medium-gray: #e0e0e0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: var(--secondary-black);
+    background-color: var(--background-white);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+a {
+    color: var(--primary-blue);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--accent-blue);
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Шапка сайта */
+header {
+    background-color: var(--background-white);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-top {
+    background-color: var(--primary-blue);
+    color: var(--background-white);
+    padding: 10px 0;
+}
+
+.header-top .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.contact-info {
+    display: flex;
+    gap: 20px;
+}
+
+.contact-info a {
+    color: var(--background-white);
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info a i {
+    margin-right: 5px;
+}
+
+.header-main {
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 75px; /* Increased logo size */
+    margin-right: 10px;
+}
+
+/* Навигация */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: var(--secondary-black);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    position: relative;
+}
+
+nav ul li a:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-blue);
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover:after {
+    width: 100%;
+}
+
+/* Мобильное меню */
+.mobile-menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Главный баннер */
+.hero {
+    height: 600px;
+    background-image: url('../images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 100px; /* Adjusted margin-top based on increased header height */
+}
+
+.hero:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    color: var(--background-white);
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+
+/* Секции */
+section {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 15px;
+}
+
+.section-title h2:after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    background-color: var(--primary-blue);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* О компании */
+.about-content {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center; /* Center image if smaller */
+}
+
+.about-image img {
+    max-width: 100%; /* Ensure image scales down */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 400px; /* Limit max height */
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Услуги */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.service-card {
+    background-color: var(--light-gray);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex; /* Added for consistent height */
+    flex-direction: column; /* Added for consistent height */
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.service-image {
+    overflow: hidden; /* Keep this to respect border-radius */
+    width: 100%; /* Ensure container takes full width */
+    aspect-ratio: 2 / 1; /* Added for consistent height */
+}
+
+.service-image img {
+    width: 100%; /* Stretch to full width */
+    height: 100%; /* Stretch to full height */
+    object-fit: cover; /* Cover the area, potentially cropping */
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover .service-image img {
+    transform: scale(1.05); /* Slightly smaller hover effect */
+}
+
+.service-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Allow content to fill space */
+}
+
+.service-content h3 {
+    margin-bottom: 10px;
+}
+
+.service-content p {
+    margin-bottom: 15px;
+    flex-grow: 1; /* Allow paragraph to grow */
+    min-height: 40px; /* Adjusted minimum height for alignment */
+}
+
+.service-content .button-container { /* Added container for button and badge */
+    margin-top: auto; /* Push to bottom */
+    display: flex;
+    align-items: center;
+}
+
+.service-content .calc-button {
+    /* margin-top: auto; Removed */
+    align-self: flex-start;
+}
+
+/* Преимущества */
+.advantages {
+    background-color: var(--light-gray);
+}
+
+.advantages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.advantage-card {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: var(--background-white);
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.advantage-card:hover {
+    transform: translateY(-10px);
+}
+
+.advantage-icon {
+    font-size: 3rem;
+    color: var(--primary-blue);
+    margin-bottom: 20px;
+}
+
+/* Форма обратной связи */
+.contact-form-section {
+    background-color: var(--primary-blue);
+    color: var(--background-white);
+}
+
+.contact-form-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group.full-width {
+    grid-column: span 2;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.form-submit {
+    grid-column: span 2;
+    text-align: center;
+}
+
+
+/* Buttons - TSP takes priority */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: var(--primary-blue);
+    color: var(--background-white);
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background-color: var(--accent-blue);
+    color: var(--background-white);
+}
+
+.btn-submit {
+    background-color: var(--secondary-black);
+    padding: 15px 40px;
+    font-size: 1rem;
+}
+
+.btn-submit:hover {
+    background-color: #333;
+}
+
+/* Футер */
+footer {
+    background-color: var(--secondary-black);
+    color: var(--background-white);
+    padding: 60px 0 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-column h3 {
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.footer-column h3:after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background-color: var(--primary-blue);
+    bottom: 0;
+    left: 0;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #ccc;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--primary-blue);
+}
+
+.footer-contact-info {
+    list-style: none;
+}
+
+.footer-contact-info li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.footer-contact-info i {
+    margin-right: 10px;
+    color: var(--primary-blue);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 992px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr; /* Stack services on smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .header-main {
+        padding: 10px 0;
+    }
+
+    .mobile-menu-toggle {
+        display: block;
+    }
+
+    nav {
+        position: fixed;
+        top: 85px; /* Adjust based on header top height */
+        left: -100%;
+        width: 80%;
+        height: calc(100vh - 85px);
+        background-color: var(--background-white);
+        transition: left 0.3s ease;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+    }
+
+    nav.active {
+        left: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .hero {
+        height: 500px;
+        margin-top: 85px; /* Adjust based on header top height */
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .contact-form {
+        grid-template-columns: 1fr;
+    }
+
+    .form-group.full-width {
+        grid-column: span 1;
+    }
+
+    .form-submit {
+        grid-column: span 1;
+    }
+}
+
+@media (max-width: 576px) {
+    .header-top .container {
+        justify-content: center;
+    }
+
+    .hero {
+        height: 400px;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+}
+
+/* Стили для бейджа "Новинка" */
+.new-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff4757;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Styles for inline new badge */
+.new-badge-inline {
+    background-color: #ff4757; /* Red color */
+    color: white;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.8rem; /* Slightly smaller */
+    margin-left: 10px; /* Space from button */
+    vertical-align: middle; /* Align with button text */
+}
+
+/* Combined Styles - Priority to TSP styles */
+
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&family=Roboto:wght@300;400;500;700&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* TSP Font Priority */
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: var(--secondary-black);
+    background-color: var(--background-white);
+    font-weight: 400; /* Override Roboto weight */
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+/* Links */
+a {
+    color: var(--primary-blue);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--accent-blue);
+}
+
+/* Reuse both containers */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Use TSP variables */
+:root {
+    --primary-blue: #0072CE;
+    --secondary-black: #000000;
+    --background-white: #FFFFFF;
+    --accent-blue: #4DACFF;
+    --light-gray: #f5f5f5;
+    --medium-gray: #e0e0e0;
+}
+
+/* Calculator Form from second file */
+.calculator-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin: 30px auto;
+    max-width: 800px;
+}
+
+.calculator-form h2 {
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.calculator-form .form-group {
+    margin-bottom: 20px;
+}
+
+.calculator-form .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #444;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.calculator-form .form-group input,
+.calculator-form .form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.calculator-form .form-group input:focus,
+.calculator-form .form-group select:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.calculator-form {
+    margin-top: 200px;;
+}

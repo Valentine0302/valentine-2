@@ -1,0 +1,13 @@
+region,charge_type,container_type,amount,currency,date_updated
+Europe,ECA,20dv,15,USD,2025-05-15
+Europe,ECA,40dv,30,USD,2025-05-15
+Europe,ECA,40hc,52,USD,2025-05-15
+Asia,CLS,20dv,20,USD,2025-05-15
+Asia,CLS,40dv,20,USD,2025-05-15
+Asia,CLS,40hc,20,USD,2025-05-15
+North America,ECA,20dv,18,USD,2025-05-15
+North America,ECA,40dv,35,USD,2025-05-15
+North America,ECA,40hc,55,USD,2025-05-15
+Mediterranean,ECA,20dv,16,USD,2025-05-15
+Mediterranean,ECA,40dv,32,USD,2025-05-15
+Mediterranean,ECA,40hc,50,USD,2025-05-15

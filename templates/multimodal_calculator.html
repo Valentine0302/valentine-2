@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="calculator-form">
+        <form id="freight-form">
+            <div class="form-group">
+                <label for="origin-port">Origin Port:</label>
+                <select id="origin-port" name="origin-port" required class="port-select">
+                    <option value="">-- Select Origin Port --</option>
+                    {% for port in expanded_ports %}
+                        <option value="{{ port.id }}">{{ port.name }}, {{ port.country }}, ({{ port.id }})</option>
+                    {% endfor %}
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="destination-port">Destination Port:</label>
+                <select id="destination-port" name="destination-port" required class="port-select">
+                    <option value="">-- Select Destination Port --</option>
+                    {% for port in expanded_ports %}
+                        <option value="{{ port.id }}">{{ port.name }}, {{ port.country }}, ({{ port.id }})</option>
+                    {% endfor %}
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="container-type">Container Type:</label>
+                <select id="container-type" name="container-type" required>
+                    <option value="">-- Select Container Type --</option>
+                    {% for container in container_types %}
+                        <option value="{{ container[0] }}">{{ container[0] }} ({{ container[1] }})</option>
+                    {% endfor %}
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <button type="submit" class="btn">Calculate</button>
+        </form>
+        <div id="result" style="display:none; margin-top:20px; padding:15px; background:#f8f9fa; border:1px solid #ccc; border-radius:5px;"></div>
+    </div>
+    <script>
+        document.getElementById('freight-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+
+            const origin = document.getElementById('origin-port').value;
+            const destination = document.getElementById('destination-port').value;
+            const containerType = document.getElementById('container-type').value;
+            const email = document.getElementById('email').value;
+
+            const resValidate = await fetch('/api/validate_email', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ email })
+            });
+            if (!resValidate.ok) {
+                const err = await resValidate.json();
+                alert(err.error);
+                return;
+            }
+
+            const res = await fetch('/api/calculate_rate_multimodal', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    originPort: origin,
+                    destinationPort: destination,
+                    containerType: containerType
+                })
+            });
+
+            const data = await res.json();
+
+            if (!res.ok) {
+                alert(data.error);
+                return;
+            }
+
+            document.getElementById('result').innerHTML = `
+                <h3>Calculation Result</h3>
+                <p><strong>Distance:</strong> ${data.distance} nm</p>
+                <p><strong>Total Freight Cost:</strong> <span style="color:green; font-weight:bold;">€${data.total_rate}</span></p>
+            `;
+
+            document.getElementById("result").style.display = "block";
+
+            await fetch('/api/send_email', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    to: email,
+                    subject: 'Freight Calculation Result',
+                    rate: data.total_rate,
+                    distance: data.distance
+                })
+            });
+        });
+    </script>
+{% endblock %}

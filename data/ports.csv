@@ -1,0 +1,144 @@
+id,name,country,region,latitude,longitude
+DKAAH,Aarhus,Denmark,Europe,56.1572,10.2107
+ESALG,Algeciras,Spain,Europe,36.1447,-5.4534
+BEANR,Antwerp,Belgium,Europe,51.2194,4.4025
+NGAPP,Apapa,Nigeria,Africa,6.4486,3.3678
+NZAKL,Auckland,New Zealand,Oceania,-36.8436,174.7669
+THBKK,Bangkok,Thailand,Asia,13.7633,100.508
+ESBCN,Barcelona,Spain,Europe,41.3525,2.1589
+BYMSQ,Minsk,Belarus,Europe,53.9006,27.559
+DEBRE,Bremen,Germany,Europe,53.0793,8.8017
+DEBRV,Bremerhaven,Germany,Europe,53.5393,8.5809
+ARBUE,Buenos Aires,Argentina,South America,-34.6037,-58.3816
+KRPUS,Busan,South Korea,Asia,35.1796,129.0756
+PECIL,Callao,Peru,South America,-12.0611,-77.1333
+ZACPT,Cape Town,South Africa,Africa,-33.918,18.4219
+PHCEB,Cebu,Philippines,Asia,10.3157,123.8854
+PACOL,Colon,Panama,Central Amer.,9.3592,-79.9014
+ROBON,Constanta,Romania,Europe,44.174,28.652
+DKCPH,Copenhagen,Denmark,Europe,55.6761,12.5683
+CNDLC,Dalian,China,Asia,38.914,121.6147
+PLGDY,Gdynia,Poland,Europe,54.5189,18.5305
+PLGDN,Gdansk,Poland,Europe,54.352,18.6466
+ITGOA,Genoa,Italy,Europe,44.4048,8.9444
+JPTYO,Tokyo,Japan,Asia,35.6895,139.6917
+CNGGZ,Guangzhou,China,Asia,23.1291,113.2644
+CNOQN,Qingdao,China,Asia,36.0671,120.3826
+CNXMN,Xiamen,China,Asia,24.4798,118.0894
+CNTAO,Tianjin,China,Asia,39.3434,117.3616
+HKHKG,Hong Kong,Hong Kong,Asia,22.3193,114.1694
+USHOU,Houston,USA,North America,29.7604,-95.3698
+TRIST,Istanbul,Turkey,Europe/Asia,41.0082,28.9784
+AEJEA,Jebel Ali,UAE,Middle East,24.9897,55.075
+SAJED,Jeddah,Saudi Arabia,Middle East,21.4858,39.1925
+RUKGD,Kaliningrad,Russia,Europe,54.7104,20.4522
+TWKEL,Keelung,Taiwan,Asia,25.1276,121.7392
+LTKLA,Klaipeda,Lithuania,Europe,55.7033,21.1443
+JPKOB,Kobe,Japan,Asia,34.6901,135.1955
+THLCH,Laem Chabang,Thailand,Asia,13.0856,100.8955
+PTLIS,Lisbon,Portugal,Europe,38.7223,-9.1393
+GBFXT,Felixstowe,UK,Europe,51.963,1.3511
+ITLIV,Livorno,Italy,Europe,43.5485,10.3106
+GBLYP,London Gateway,UK,Europe,51.4891,0.3742
+USLGB,Long Beach,USA,North America,33.7542,-118.2167
+USLAX,Los Angeles,USA,North America,33.7361,-118.2611
+PHMNL,Manila,Philippines,Asia,14.5995,120.9842
+MXZLO,Manzanillo,Mexico,Central Amer.,19.0507,-104.3187
+FRLEH,Le Havre,France,Europe,49.4944,0.1079
+FRMRS,Marseille,France,Europe,43.2965,5.3698
+CAMTR,Montreal,Canada,North America,45.5017,-73.5673
+ITNAP,Naples,Italy,Europe,40.8518,14.2681
+JPOSA,Osaka,Japan,Asia,34.6937,135.5023
+USOAK,Oakland,USA,North America,37.8044,-122.2711
+NLRTM,Rotterdam,Netherlands,Europe,51.9225,4.4792
+BRSSZ,Santos,Brazil,South America,-23.9608,-46.3336
+USSAV,Savannah,USA,North America,32.0809,-81.0912
+CNSHA,Shanghai,China,Asia,31.2304,121.4737
+CNSZX,Shenzhen,China,Asia,22.5431,114.0579
+SGSIN,Singapore,Singapore,Asia,1.3521,103.8198
+SESTO,Stockholm,Sweden,Europe,59.3293,18.0686
+RULED,St. Petersburg,Russia,Europe,59.9343,30.3351
+AUSYD,Sydney,Australia,Oceania,-33.8688,151.2093
+TWTXG,Taichung,Taiwan,Asia,24.1477,120.6736
+TWKHH,Kaohsiung,Taiwan,Asia,22.6273,120.3014
+IDTPP,Tanjung Priok,Indonesia,Asia,-6.1044,106.8864
+GRPIR,Piraeus,Greece,Europe,37.9421,23.6465
+EGALY,Alexandria,Egypt,Africa,31.2001,29.9187
+GRTHS,Thessaloniki,Greece,Europe,40.6401,22.9444
+CNYTN,Yantian,China,Asia,22.556,114.236
+USNYC,New York,USA,North America,40.7128,-74.006
+CNNGB,Ningbo-Zhoushan,China,Asia,29.8683,121.544
+ITTRS,Trieste,Italy,Europe,45.6495,13.7768
+CLVAP,Valparaiso,Chile,South America,-33.0472,-71.6127
+CAVAN,Vancouver,Canada,North America,49.2827,-123.1207
+LVVNT,Ventspils,Latvia,Europe,57.3894,21.5606
+VNVUT,Vung Tau,Vietnam,Asia,10.3459,107.0843
+JPYOK,Yokohama,Japan,Asia,35.4437,139.638
+BEZEE,Zeebrugge,Belgium,Europe,51.3316,3.2075
+BRRIO,Rio de Janeiro,Brazil,South America,-22.9035,-43.2096
+BRRIG,Rio Grande,Brazil,South America,-32.0333,-52.1028
+ONSLL,Salalah,Oman,Middle East,17.0187,54.0894
+MXVER,Veracruz,Mexico,Central Amer.,19.1903,-96.1429
+USCHS,Charleston,USA,North America,32.7765,-79.9311
+CNLYG,Lianyungang,China,Asia,34.7406,119.3766
+AZBAK,Baku,Azerbaijan,Asia,40.4093,49.8671
+CNJTG,Jingtang,China,Asia,39.265,118.675
+NLRTS,Rotterdam South,Netherlands,Europe,51.879,4.4886
+FITKU,Turku,Finland,Europe,60.4518,22.2666
+MZNAC,Nacala,Mozambique,Africa,-14.5428,40.6728
+OMSOH,Sohar North,Oman,Middle East,24.342,56.7283
+EEULL,Tallinn,Estonia,Europe,59.4369,24.7536
+NOOSL,Oslo,Norway,Europe,59.9139,10.7522
+NOBGO,Bergen,Norway,Europe,60.3929,5.3236
+CAHAL,Halifax,Canada,North America,44.6488,-63.5752
+CASJD,St. John's,Canada,North America,47.5615,-52.7126
+CAHAM,Hamilton,Canada,North America,43.2557,-79.8711
+CAQUE,Quebec,Canada,North America,46.8139,-71.2082
+CAWIN,Windsor,Canada,North America,42.3149,-83.0364
+CAWPR,Prince Rupert,Canada,North America,54.315,-130.32
+CAWES,Westshore,Canada,North America,49.0333,-123.0833
+CAWHT,Whitehorse,Canada,North America,60.7212,-135.0568
+USMIA,Miami,USA,North America,25.7617,-80.1918
+USJAX,Jacksonville,USA,North America,30.3322,-81.6557
+USPHL,Philadelphia,USA,North America,39.9526,-75.1652
+USSEA,Seattle,USA,North America,47.6062,-122.3321
+USBAL,Baltimore,USA,North America,39.2904,-76.6122
+USNOL,New Orleans,USA,North America,29.9511,-90.0715
+USVAP,Virginia (Norfolk),USA,North America,36.8468,-76.2859
+USPTC,Port Canaveral,USA,North America,28.4138,-80.6331
+USPEV,Port Everglades,USA,North America,26.093,-80.113
+USMOB,Mobile,USA,North America,30.6954,-88.0399
+USWIL,Wilmington (NC),USA,North America,34.2257,-77.9447
+USWIL2,Wilmington (DE),USA,North America,39.7391,-75.5398
+USOXR,Oxnard,USA,North America,34.1975,-119.1771
+USGUL,Gulfport,USA,North America,30.3674,-89.0928
+USHON,Honolulu,USA,North America,21.3069,-157.8583
+USAKL,Anchorage,USA,North America,61.2181,-149.9003
+PRSJU,San Juan,Puerto Rico,North America,18.4655,-66.1057
+INMUN,Mundra,India,Asia,22.727,69.7036
+INNSA,Nhava Sheva,India,Asia,18.9633,72.9515
+LKCOL,Colombo,Sri Lanka,Asia,6.9531,79.8508
+MAHMO,Tanger Med,Morocco,Africa,35.8894,-5.4891
+MYKLG,Klang,Malaysia,Asia,2.9986,101.3929
+MYTPP,Tanjung Pelepas,Malaysia,Asia,1.3667,103.5333
+VNCMT,Cai Mep-Thi Vai,Vietnam,Asia,10.6136,107.029
+BDCTG,Chittagong,Bangladesh,Asia,22.3072,91.8071
+PKKHI,Karachi,Pakistan,Asia,24.8352,67.0731
+TRAMB,Ambarli,Turkey,Europe,40.97,28.6936
+TRMER,Mersin,Turkey,Europe/Asia,36.8,34.6333
+ZADUR,Durban,South Africa,Africa,-29.8587,31.0218
+CNINC,Incheon,South Korea,Asia,37.4536,126.6932
+USSEA2,Tacoma,USA,North America,47.2529,-122.4443
+BRITJ,Itajai,Brazil,South America,-26.9101,-48.6705
+CLVAP2,San Antonio,Chile,South America,-33.586,-71.6131
+USCHS2,Charleston,USA,North America,32.7765,-79.9311
+USLGB2,Port Hueneme,USA,North America,34.1478,-119.1951
+USMIA2,Port Manatee,USA,North America,27.6386,-82.5628
+USBOS,Boston,USA,North America,42.3601,-71.0589
+USPOR,Portland,USA,North America,45.5231,-122.6765
+USPHI,Philadelphia,USA,North America,39.9526,-75.1652
+USJAX2,Jacksonville,USA,North America,30.3322,-81.6557
+USNOL2,New Orleans,USA,North America,29.9511,-90.0715
+USBAL2,Baltimore,USA,North America,39.2904,-76.6122
+USWIL3,Wilmington (NC),USA,North America,34.2257,-77.9447
+USWIL4,Wilmington (DE),USA,North America,39.7391,-75.5398

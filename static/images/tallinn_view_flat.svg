@@ -1,0 +1,51 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Sky -->
+  <rect width="600" height="200" fill="#A0D2EB"/>
+  <!-- Water -->
+  <rect y="200" width="600" height="200" fill="#0077CC"/>
+
+  <!-- Tallinn Old Town Silhouette -->
+  <!-- Main land mass -->
+  <rect x="50" y="150" width="500" height="50" fill="#FFFFFF"/>
+  
+  <!-- Tallinn's iconic buildings and towers -->
+  <!-- St. Olaf's Church (Oleviste) - tallest in old Tallinn -->
+  <rect x="150" y="70" width="20" height="80" fill="#FFFFFF"/>
+  <polygon points="150,70 160,50 170,70" fill="#FFFFFF"/>
+  
+  <!-- Town Hall Tower -->
+  <rect x="220" y="100" width="15" height="50" fill="#FFFFFF"/>
+  <polygon points="220,100 227.5,85 235,100" fill="#FFFFFF"/>
+  
+  <!-- St. Nicholas' Church -->
+  <rect x="270" y="90" width="25" height="60" fill="#FFFFFF"/>
+  <rect x="280" y="70" width="5" height="20" fill="#FFFFFF"/>
+  
+  <!-- Alexander Nevsky Cathedral domes -->
+  <rect x="320" y="100" width="30" height="50" fill="#FFFFFF"/>
+  <ellipse cx="335" cy="100" rx="15" ry="10" fill="#FFFFFF"/>
+  
+  <!-- Toompea Castle */Fat Margaret Tower -->
+  <rect x="380" y="110" width="40" height="40" fill="#FFFFFF"/>
+  <rect x="390" y="90" width="20" height="20" fill="#FFFFFF"/>
+  
+  <!-- Modern buildings */Skyscrapers in distance -->
+  <rect x="450" y="100" width="10" height="50" fill="#E0F2F7"/>
+  <rect x="470" y="110" width="15" height="40" fill="#E0F2F7"/>
+  <rect x="495" y="90" width="12" height="60" fill="#E0F2F7"/>
+  
+  <!-- Port elements -->
+  <rect x="100" y="200" width="80" height="20" fill="#E0F2F7"/> <!-- Terminal -->
+  
+  <!-- Ships -->
+  <rect x="50" y="230" width="60" height="15" fill="#FFFFFF"/> <!-- Ferry -->
+  <rect x="60" y="220" width="10" height="10" fill="#E0F2F7"/> <!-- Ferry structure -->
+  
+  <rect x="200" y="250" width="100" height="25" fill="#FFFFFF"/> <!-- Cruise ship -->
+  <rect x="240" y="225" width="20" height="25" fill="#E0F2F7"/> <!-- Cruise ship structure -->
+  
+  <!-- Waves/Lines -->
+  <line x1="0" y1="220" x2="600" y2="220" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="10 5"/>
+  <line x1="0" y1="240" x2="600" y2="240" stroke="#FFFFFF" stroke-width="1" stroke-dasharray="8 4"/>
+
+</svg>

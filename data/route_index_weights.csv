@@ -1,0 +1,253 @@
+route,index_name,weight,date_updated
+Asia-Europe,FBX,0.35,2025-05-19
+Asia-Europe,SCFI,0.30,2025-05-19
+Asia-Europe,WCI,0.15,2025-05-19
+Asia-Europe,CCFI,0.10,2025-05-19
+Asia-Europe,NCFI,0.03,2025-05-19
+Asia-Europe,CTS,0.03,2025-05-19
+Asia-Europe,XSI,0.02,2025-05-19
+Asia-Europe,CPI,0.01,2025-05-19
+Asia-Europe,PMI,0.01,2025-05-19
+Asia-Mediterranean,FBX,0.30,2025-05-19
+Asia-Mediterranean,SCFI,0.30,2025-05-19
+Asia-Mediterranean,WCI,0.20,2025-05-19
+Asia-Mediterranean,CCFI,0.10,2025-05-19
+Asia-Mediterranean,NCFI,0.03,2025-05-19
+Asia-Mediterranean,CTS,0.03,2025-05-19
+Asia-Mediterranean,XSI,0.02,2025-05-19
+Asia-Mediterranean,CPI,0.01,2025-05-19
+Asia-Mediterranean,PMI,0.01,2025-05-19
+Asia-North America East,FBX,0.40,2025-05-19
+Asia-North America East,SCFI,0.25,2025-05-19
+Asia-North America East,WCI,0.15,2025-05-19
+Asia-North America East,CCFI,0.10,2025-05-19
+Asia-North America East,NCFI,0.03,2025-05-19
+Asia-North America East,CTS,0.03,2025-05-19
+Asia-North America East,XSI,0.02,2025-05-19
+Asia-North America East,CPI,0.01,2025-05-19
+Asia-North America East,PMI,0.01,2025-05-19
+Asia-North America West,FBX,0.45,2025-05-19
+Asia-North America West,SCFI,0.25,2025-05-19
+Asia-North America West,WCI,0.10,2025-05-19
+Asia-North America West,CCFI,0.10,2025-05-19
+Asia-North America West,NCFI,0.03,2025-05-19
+Asia-North America West,CTS,0.03,2025-05-19
+Asia-North America West,XSI,0.02,2025-05-19
+Asia-North America West,CPI,0.01,2025-05-19
+Asia-North America West,PMI,0.01,2025-05-19
+Europe-Asia,FBX,0.20,2025-05-19
+Europe-Asia,SCFI,0.15,2025-05-19
+Europe-Asia,WCI,0.40,2025-05-19
+Europe-Asia,CCFI,0.10,2025-05-19
+Europe-Asia,NCFI,0.05,2025-05-19
+Europe-Asia,CTS,0.03,2025-05-19
+Europe-Asia,XSI,0.05,2025-05-19
+Europe-Asia,CPI,0.01,2025-05-19
+Europe-Asia,PMI,0.01,2025-05-19
+Europe-North America,FBX,0.25,2025-05-19
+Europe-North America,SCFI,0.10,2025-05-19
+Europe-North America,WCI,0.35,2025-05-19
+Europe-North America,CCFI,0.10,2025-05-19
+Europe-North America,NCFI,0.05,2025-05-19
+Europe-North America,CTS,0.05,2025-05-19
+Europe-North America,XSI,0.05,2025-05-19
+Europe-North America,CPI,0.03,2025-05-19
+Europe-North America,PMI,0.02,2025-05-19
+Intra-Asia,FBX,0.15,2025-05-19
+Intra-Asia,SCFI,0.25,2025-05-19
+Intra-Asia,WCI,0.10,2025-05-19
+Intra-Asia,CCFI,0.20,2025-05-19
+Intra-Asia,NCFI,0.15,2025-05-19
+Intra-Asia,CTS,0.05,2025-05-19
+Intra-Asia,XSI,0.05,2025-05-19
+Intra-Asia,CPI,0.03,2025-05-19
+Intra-Asia,PMI,0.02,2025-05-19
+Asia-South America,FBX,0.33,2025-05-19
+Asia-South America,SCFI,0.28,2025-05-19
+Asia-South America,WCI,0.15,2025-05-19
+Asia-South America,CCFI,0.12,2025-05-19
+Asia-South America,NCFI,0.05,2025-05-19
+Asia-South America,CTS,0.03,2025-05-19
+Asia-South America,XSI,0.02,2025-05-19
+Asia-South America,CPI,0.01,2025-05-19
+Asia-South America,PMI,0.01,2025-05-19
+Asia-Africa,FBX,0.25,2025-05-19
+Asia-Africa,SCFI,0.20,2025-05-19
+Asia-Africa,WCI,0.20,2025-05-19
+Asia-Africa,CCFI,0.15,2025-05-19
+Asia-Africa,NCFI,0.08,2025-05-19
+Asia-Africa,CTS,0.05,2025-05-19
+Asia-Africa,XSI,0.03,2025-05-19
+Asia-Africa,CPI,0.02,2025-05-19
+Asia-Africa,PMI,0.02,2025-05-19
+Asia-Middle East,FBX,0.30,2025-05-19
+Asia-Middle East,SCFI,0.25,2025-05-19
+Asia-Middle East,WCI,0.15,2025-05-19
+Asia-Middle East,CCFI,0.15,2025-05-19
+Asia-Middle East,NCFI,0.07,2025-05-19
+Asia-Middle East,CTS,0.03,2025-05-19
+Asia-Middle East,XSI,0.02,2025-05-19
+Asia-Middle East,CPI,0.02,2025-05-19
+Asia-Middle East,PMI,0.01,2025-05-19
+Asia-Oceania,FBX,0.28,2025-05-19
+Asia-Oceania,SCFI,0.25,2025-05-19
+Asia-Oceania,WCI,0.18,2025-05-19
+Asia-Oceania,CCFI,0.12,2025-05-19
+Asia-Oceania,NCFI,0.06,2025-05-19
+Asia-Oceania,CTS,0.04,2025-05-19
+Asia-Oceania,XSI,0.03,2025-05-19
+Asia-Oceania,CPI,0.02,2025-05-19
+Asia-Oceania,PMI,0.02,2025-05-19
+Europe-South America,FBX,0.30,2025-05-19
+Europe-South America,SCFI,0.15,2025-05-19
+Europe-South America,WCI,0.25,2025-05-19
+Europe-South America,CCFI,0.10,2025-05-19
+Europe-South America,NCFI,0.05,2025-05-19
+Europe-South America,CTS,0.05,2025-05-19
+Europe-South America,XSI,0.05,2025-05-19
+Europe-South America,CPI,0.03,2025-05-19
+Europe-South America,PMI,0.02,2025-05-19
+Europe-Africa,FBX,0.25,2025-05-19
+Europe-Africa,SCFI,0.15,2025-05-19
+Europe-Africa,WCI,0.30,2025-05-19
+Europe-Africa,CCFI,0.12,2025-05-19
+Europe-Africa,NCFI,0.05,2025-05-19
+Europe-Africa,CTS,0.05,2025-05-19
+Europe-Africa,XSI,0.03,2025-05-19
+Europe-Africa,CPI,0.03,2025-05-19
+Europe-Africa,PMI,0.02,2025-05-19
+Europe-Middle East,FBX,0.30,2025-05-19
+Europe-Middle East,SCFI,0.20,2025-05-19
+Europe-Middle East,WCI,0.20,2025-05-19
+Europe-Middle East,CCFI,0.15,2025-05-19
+Europe-Middle East,NCFI,0.05,2025-05-19
+Europe-Middle East,CTS,0.03,2025-05-19
+Europe-Middle East,XSI,0.03,2025-05-19
+Europe-Middle East,CPI,0.02,2025-05-19
+Europe-Middle East,PMI,0.02,2025-05-19
+Europe-Oceania,FBX,0.25,2025-05-19
+Europe-Oceania,SCFI,0.15,2025-05-19
+Europe-Oceania,WCI,0.35,2025-05-19
+Europe-Oceania,CCFI,0.10,2025-05-19
+Europe-Oceania,NCFI,0.05,2025-05-19
+Europe-Oceania,CTS,0.04,2025-05-19
+Europe-Oceania,XSI,0.03,2025-05-19
+Europe-Oceania,CPI,0.02,2025-05-19
+Europe-Oceania,PMI,0.01,2025-05-19
+North America-South America,FBX,0.30,2025-05-19
+North America-South America,SCFI,0.15,2025-05-19
+North America-South America,WCI,0.25,2025-05-19
+North America-South America,CCFI,0.12,2025-05-19
+North America-South America,NCFI,0.05,2025-05-19
+North America-South America,CTS,0.05,2025-05-19
+North America-South America,XSI,0.03,2025-05-19
+North America-South America,CPI,0.03,2025-05-19
+North America-South America,PMI,0.02,2025-05-19
+North America-Europe,FBX,0.30,2025-05-19
+North America-Europe,SCFI,0.15,2025-05-19
+North America-Europe,WCI,0.30,2025-05-19
+North America-Europe,CCFI,0.12,2025-05-19
+North America-Europe,NCFI,0.03,2025-05-19
+North America-Europe,CTS,0.04,2025-05-19
+North America-Europe,XSI,0.03,2025-05-19
+North America-Europe,CPI,0.02,2025-05-19
+North America-Europe,PMI,0.01,2025-05-19
+North America-Asia,FBX,0.25,2025-05-19
+North America-Asia,SCFI,0.20,2025-05-19
+North America-Asia,WCI,0.20,2025-05-19
+North America-Asia,CCFI,0.15,2025-05-19
+North America-Asia,NCFI,0.08,2025-05-19
+North America-Asia,CTS,0.04,2025-05-19
+North America-Asia,XSI,0.04,2025-05-19
+North America-Asia,CPI,0.02,2025-05-19
+North America-Asia,PMI,0.02,2025-05-19
+North America-Africa,FBX,0.20,2025-05-19
+North America-Africa,SCFI,0.15,2025-05-19
+North America-Africa,WCI,0.25,2025-05-19
+North America-Africa,CCFI,0.15,2025-05-19
+North America-Africa,NCFI,0.05,2025-05-19
+North America-Africa,CTS,0.07,2025-05-19
+North America-Africa,XSI,0.05,2025-05-19
+North America-Africa,CPI,0.04,2025-05-19
+North America-Africa,PMI,0.04,2025-05-19
+North America-Middle East,FBX,0.20,2025-05-19
+North America-Middle East,SCFI,0.15,2025-05-19
+North America-Middle East,WCI,0.25,2025-05-19
+North America-Middle East,CCFI,0.15,2025-05-19
+North America-Middle East,NCFI,0.05,2025-05-19
+North America-Middle East,CTS,0.07,2025-05-19
+North America-Middle East,XSI,0.05,2025-05-19
+North America-Middle East,CPI,0.04,2025-05-19
+North America-Middle East,PMI,0.04,2025-05-19
+North America-Oceania,FBX,0.25,2025-05-19
+North America-Oceania,SCFI,0.15,2025-05-19
+North America-Oceania,WCI,0.30,2025-05-19
+North America-Oceania,CCFI,0.10,2025-05-19
+North America-Oceania,NCFI,0.05,2025-05-19
+North America-Oceania,CTS,0.05,2025-05-19
+North America-Oceania,XSI,0.05,2025-05-19
+North America-Oceania,CPI,0.03,2025-05-19
+North America-Oceania,PMI,0.02,2025-05-19
+Intra-Europe,FBX,0.20,2025-05-19
+Intra-Europe,SCFI,0.10,2025-05-19
+Intra-Europe,WCI,0.30,2025-05-19
+Intra-Europe,CCFI,0.10,2025-05-19
+Intra-Europe,NCFI,0.07,2025-05-19
+Intra-Europe,CTS,0.07,2025-05-19
+Intra-Europe,XSI,0.08,2025-05-19
+Intra-Europe,CPI,0.05,2025-05-19
+Intra-Europe,PMI,0.03,2025-05-19
+Intra-Americas,FBX,0.25,2025-05-19
+Intra-Americas,SCFI,0.15,2025-05-19
+Intra-Americas,WCI,0.20,2025-05-19
+Intra-Americas,CCFI,0.15,2025-05-19
+Intra-Americas,NCFI,0.08,2025-05-19
+Intra-Americas,CTS,0.05,2025-05-19
+Intra-Americas,XSI,0.05,2025-05-19
+Intra-Americas,CPI,0.04,2025-05-19
+Intra-Americas,PMI,0.03,2025-05-19
+Intra-Middle East,FBX,0.15,2025-05-19
+Intra-Middle East,SCFI,0.10,2025-05-19
+Intra-Middle East,WCI,0.15,2025-05-19
+Intra-Middle East,CCFI,0.20,2025-05-19
+Intra-Middle East,NCFI,0.15,2025-05-19
+Intra-Middle East,CTS,0.10,2025-05-19
+Intra-Middle East,XSI,0.05,2025-05-19
+Intra-Middle East,CPI,0.05,2025-05-19
+Intra-Middle East,PMI,0.05,2025-05-19
+Intra-Africa,FBX,0.15,2025-05-19
+Intra-Africa,SCFI,0.10,2025-05-19
+Intra-Africa,WCI,0.15,2025-05-19
+Intra-Africa,CCFI,0.20,2025-05-19
+Intra-Africa,NCFI,0.15,2025-05-19
+Intra-Africa,CTS,0.10,2025-05-19
+Intra-Africa,XSI,0.05,2025-05-19
+Intra-Africa,CPI,0.05,2025-05-19
+Intra-Africa,PMI,0.05,2025-05-19
+Intra-Oceania,FBX,0.15,2025-05-19
+Intra-Oceania,SCFI,0.10,2025-05-19
+Intra-Oceania,WCI,0.20,2025-05-19
+Intra-Oceania,CCFI,0.15,2025-05-19
+Intra-Oceania,NCFI,0.10,2025-05-19
+Intra-Oceania,CTS,0.10,2025-05-19
+Intra-Oceania,XSI,0.08,2025-05-19
+Intra-Oceania,CPI,0.07,2025-05-19
+Intra-Oceania,PMI,0.05,2025-05-19
+South America-Africa,FBX,0.15,2025-05-19
+South America-Africa,SCFI,0.15,2025-05-19
+South America-Africa,WCI,0.20,2025-05-19
+South America-Africa,CCFI,0.15,2025-05-19
+South America-Africa,NCFI,0.10,2025-05-19
+South America-Africa,CTS,0.10,2025-05-19
+South America-Africa,XSI,0.05,2025-05-19
+South America-Africa,CPI,0.05,2025-05-19
+South America-Africa,PMI,0.05,2025-05-19
+South America-Asia,FBX,0.30,2025-05-19
+South America-Asia,SCFI,0.25,2025-05-19
+South America-Asia,WCI,0.20,2025-05-19
+South America-Asia,CCFI,0.15,2025-05-19
+South America-Asia,NCFI,0.04,2025-05-19
+South America-Asia,CTS,0.02,2025-05-19
+South America-Asia,XSI,0.02,2025-05-19
+South America-Asia,CPI,0.01,2025-05-19
+South America-Asia,PMI,0.01,2025-05-19

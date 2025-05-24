@@ -1,0 +1,189 @@
+{% extends "base.html" %}
+
+{% block title %}Главная - TSP Transport OÜ{% endblock %}
+
+{% block content %}
+<!-- Главный баннер -->
+<section id="home" class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1>Reliable International Freight Forwarding</h1>
+            <p>TSP Transport OÜ arranges multimodal shipments worldwide.</p>
+            <a href="#contact" class="btn">Your personal assistant is always available – ask us anything!</a>
+        </div>
+    </div>
+</section>
+
+<!-- О компании -->
+<section id="about" class="about">
+    <div class="container">
+        <div class="section-title">
+            <h2>About Us</h2>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>TSP Transport OÜ – Care, Integrity, and the Technologies of Tomorrow</h3>
+                <p>When your business faces logistical challenges, we become your steadfast support.</p>
+                <p>Are you seeking a partner who solves problems rather than passing them on to you?</p>
+                <p>We are a team of experts who transform the complexity of your challenges into our motivation.</p>
+                <p>For you, it is confidence in delivery. For us, it is responsibility for every container, pallet, and order.</p>
+                <p>We love what we do!</p>
+            </div>
+            <div class="about-image">
+                <img src="{{ url_for('static', filename='images/tallinn_view_flat.svg') }}" alt="TSP Transport OÜ - Tallinn View">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Услуги -->
+<section id="services" class="services">
+    <div class="container">
+        <div class="section-title">
+            <h2>Our Services</h2>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="{{ url_for('static', filename='images/multimodal_transport_anton_pieck.jpg') }}" alt="Multimodal Transport Worldwide">
+                </div>
+                <div class="service-content">
+                    <h3>Multimodal Transport Worldwide</h3>
+                    <p>FCL/LCL, Consolidated Cargo, General, and Oversized Shipments</p>
+                    <div class="button-container">
+                        <a href="/multimodal_calculator" class="btn calc-button" style="text-decoration:none;">Learn More</a>
+                        <span class="new-badge-inline">New</span>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="{{ url_for('static', filename='images/europe_transport_anton_pieck.jpg') }}" alt="Road Transport Across Europe">
+                </div>
+                <div class="service-content">
+                    <h3>Transport Solutions for Any Complexity Across Europe</h3>
+                    <p>FT/LTL, Oversized and Heavy Cargo</p>
+                    <div class="button-container">
+                        <a href="/europe_calculator" class="btn calc-button" style="text-decoration:none;">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="{{ url_for('static', filename='images/asia_transport_anton_pieck.jpg') }}" alt="Shipments to Central Asia">
+                </div>
+                <div class="service-content">
+                    <h3>Cargo Transport to Central Asia</h3>
+                    <p>Kazakhstan, Uzbekistan, Tajikistan</p>
+                    <div class="button-container">
+                        <a href="/asia_calculator" class="btn calc-button" style="text-decoration:none;">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="{{ url_for('static', filename='images/customs_warehouse_flat.svg') }}" alt="Customs Warehouse Services">
+                </div>
+                <div class="service-content">
+                    <h3>Customs Warehouse and Brokerage Services</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Преимущества -->
+<section id="advantages" class="advantages">
+    <div class="container">
+        <div class="section-title">
+            <h2>Our Advantages</h2>
+        </div>
+        <div class="advantages-grid">
+            <div class="advantage-card">
+                <div class="advantage-icon">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <h3>Transparency and Accountability</h3>
+                <p>We are always open to dialogue and take full responsibility for meeting our commitments to clients.</p>
+            </div>
+            <div class="advantage-card">
+                <div class="advantage-icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <h3>Tailored Approach</h3>
+                <p>We develop bespoke logistics solutions for each client, taking into account their business specifics and shipping requirements.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Форма обратной связи -->
+<section id="contact" class="contact-form-section">
+    <div class="container">
+        <div class="section-title">
+            <h2>Contact Us</h2>
+        </div>
+        <div class="contact-form-container">
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name*</label>
+                    <input type="text" id="name" name="name" required />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" required />
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" />
+                </div>
+                <div class="form-group">
+                    <label for="company">Company</label>
+                    <input type="text" id="company" name="company" />
+                </div>
+                <div class="form-group full-width">
+                    <label for="message">Message*</label>
+                    <textarea id="message" name="message" minlength="10" required></textarea>
+                </div>
+                <div class="form-submit">
+                    <button type="submit" class="btn btn-submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+
+    const form = e.target;
+    const formData = {
+        name: form.name.value.trim(),
+        email: form.email.value.trim(),
+        phone: form.phone.value.trim(),
+        company: form.company.value.trim(),
+        message: form.message.value.trim(),
+    };
+
+    try {
+        const response = await fetch('/api/send_contact_form', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify(formData)
+        });
+        const result = await response.json();
+
+        if (response.ok) {
+            alert('Thank you! Your message has been sent successfully.');
+            form.reset();
+        } else {
+            alert('Error: ' + (result.error || 'Unknown error occurred.'));
+        }
+    } catch (err) {
+        alert('Network error: ' + err.message);
+    }
+});
+</script>
+
+{% endblock %}

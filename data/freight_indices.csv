@@ -1,0 +1,10 @@
+index_name,current_value,base_value,weight,description,date_updated
+FBX,3245,3000,0.35,Freightos Baltic Index,2025-05-19
+SCFI,2987,2800,0.25,Shanghai Containerized Freight Index,2025-05-19
+WCI,3120,2900,0.15,World Container Index,2025-05-19
+CCFI,1850,1700,0.10,China Containerized Freight Index,2025-05-19
+NCFI,1780,1650,0.05,Ningbo Containerized Freight Index,2025-05-19
+CTS,2450,2300,0.03,Container Trades Statistics,2025-05-19
+XSI,3350,3100,0.03,Xeneta Shipping Index,2025-05-19
+CPI,1950,1800,0.02,Container Price Index,2025-05-19
+PMI,2100,2000,0.02,Port Movement Index,2025-05-19

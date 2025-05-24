@@ -1,0 +1,132 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="calculator-form">
+    <form id="freight-form" novalidate>
+        <!-- Input Fields -->
+        <div class="form-group">
+            <label for="origin-country">Origin Country:</label>
+            <select id="origin-country" name="origin-country" required>
+                <option value="">-- Select Country --</option>
+                {% for country in countries %}
+                <option value="{{ country.code }}">{{ country.name }} ({{ country.code }})</option>
+                {% endfor %}
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="origin-zip">Origin ZIP Code:</label>
+            <input type="text" id="origin-zip" name="origin-zip" pattern="[A-Za-z0-9\- ]{3,10}" required>
+        </div>
+
+        <div class="form-group">
+            <label for="destination-country">Destination Country:</label>
+            <select id="destination-country" name="destination-country" required>
+                <option value="">-- Select Country --</option>
+                {% for country in countries %}
+                <option value="{{ country.code }}">{{ country.name }} ({{ country.code }})</option>
+                {% endfor %}
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="destination-zip">Destination ZIP Code:</label>
+            <input type="text" id="destination-zip" name="destination-zip" pattern="[A-Za-z0-9\- ]{3,10}" required>
+        </div>
+
+        <div class="form-group">
+            <label for="loading-meters">Loading Meters (1-10):</label>
+            <input type="number" id="loading-meters" name="loading-meters" min="1" max="10" step="0.1" required>
+        </div>
+
+        <div class="form-group">
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" name="weight" min="1" step="0.1" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <button type="submit" class="btn">Calculate</button>
+    </form>
+
+    <div id="result" style="display:none; margin-top:20px; padding:15px; background:#f8f9fa; border:1px solid #ccc; border-radius:5px;"></div>
+</div>
+
+<script>
+document.getElementById("freight-form").addEventListener("submit", async function (event) {
+    event.preventDefault();
+
+    const form = event.target;
+    if (!form.checkValidity()) {
+        alert("Please fill in all required fields correctly.");
+        return;
+    }
+
+    const email = form["email"].value.trim();
+
+    try {
+        const emailValidation = await fetch("/api/validate_email", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ email })
+        });
+
+        const emailResult = await emailValidation.json();
+
+        if (!emailValidation.ok) {
+            alert(emailResult.error);
+            return;
+        }
+
+        const ldm = parseFloat(form["loading-meters"].value);
+        const weight = parseFloat(form["weight"].value);
+        const fromCountry = form["origin-country"].value;
+        const fromZip = form["origin-zip"].value.trim();
+        const toCountry = form["destination-country"].value;
+        const toZip = form["destination-zip"].value.trim();
+
+        const calcResponse = await fetch("/api/calculate_rate_europe", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ fromCountry, toCountry, fromZip, toZip, ldm, weight })
+        });
+
+        const result = await calcResponse.json();
+
+        if (result.error) {
+            alert("Error: " + result.error);
+            return;
+        }
+
+        const resultHtml = `
+            <h3>Calculation Result</h3>
+            <p><strong>Distance:</strong> ${result.distance} km</p>
+            <p><strong>Chargeable Volume:</strong> ${result.chargeable_ldm} LDM</p>
+            <p><strong>Total Freight Cost:</strong> <span style="color:green; font-weight:bold;">€${result.rate}</span></p>
+        `;
+
+        document.getElementById("result").innerHTML = resultHtml;
+        document.getElementById("result").style.display = "block";
+
+        await fetch('/api/send_email', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                to: email,
+                subject: 'Your Freight Calculation Result',
+                rate: result.rate,
+                distance: result.distance,
+                chargeable_ldm: result.chargeable_ldm
+            })
+        });
+
+    } catch (err) {
+        console.error(err);
+        alert("An unexpected error occurred. Please try again.");
+    }
+});
+</script>
+{% endblock %}
