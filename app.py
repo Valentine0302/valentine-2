@@ -29,6 +29,15 @@ def load_asian_cities(filename):
 def index():
     return render_template('index.html')
 
+@app.route('/ru')
+def index_ru():
+    return render_template('index_ru.html')
+
+
+@app.route('/et')
+def index_et():
+    return render_template('index_et.html')
+
 @app.route('/multimodal_calculator')
 def multimodal_calculator():
     container_types = [
