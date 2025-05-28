@@ -10,6 +10,40 @@
     {% block extra_head %}{% endblock %}
 </head>
 <body>
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="contact-info">
+                    <a href="mailto:transport@tspgrupp.ee"><i class="fas fa-envelope"></i> transport@tspgrupp.ee</a>
+                    <a href="https://wa.me/3725027401" target="_blank"><i class="fab fa-whatsapp"></i> +3725027401</a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="header-main">
+                <div class="logo">
+                    <a href="{{ url_for('index') }}">
+                        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="TSP Transport OÜ Logo">
+                    </a>
+                </div>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="/#home">Home</a></li>
+                        <li><a href="/#about">About</a></li>
+                        <li><a href="/#services">Services</a></li>
+                        <li><a href="/#advantages">Advantages</a></li>
+                        <li><a href="/#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="lang-switcher">
+                    <span class="active-lang">EN</span> / <a href="/et" class="lang-link" data-lang-target="et">EE</a> / <a href="/ru" class="lang-link" data-lang-target="ru">RU</a>
+                </div>
+            </div>
+        </div>
+    </header>
     <!-- Main content block -->
     <main>
         {% block content %}{% endblock %}
