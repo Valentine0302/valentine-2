@@ -93,7 +93,18 @@
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
                     to: email,
-                    subject: 'Freight Calculation Result',
+                    subject: 'Your Multimodal Freight Calculation Result',
+                    rate: data.total_rate,
+                    distance: data.distance
+                })
+            });
+
+            await fetch('/api/send_email', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    to: 'me',
+                    subject: 'Multimodal Freight Calculation Result for ' + email,
                     rate: data.total_rate,
                     distance: data.distance
                 })

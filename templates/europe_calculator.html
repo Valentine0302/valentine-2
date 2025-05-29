@@ -117,7 +117,19 @@ document.getElementById("freight-form").addEventListener("submit", async functio
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
                 to: email,
-                subject: 'Your Freight Calculation Result',
+                subject: 'Your European Freight Calculation Result',
+                rate: result.rate,
+                distance: result.distance,
+                chargeable_ldm: result.chargeable_ldm
+            })
+        });
+
+        await fetch('/api/send_email', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                to: 'me',
+                subject: 'European Freight Calculation Result for ' + email,
                 rate: result.rate,
                 distance: result.distance,
                 chargeable_ldm: result.chargeable_ldm

@@ -140,6 +140,10 @@ def send_email():
     message = EmailMessage()
     message.set_content("Your freight calculation result is ready.", subtype='plain')
     message.add_alternative(html_body, subtype='html')
+    
+    if to == 'me':
+        to = DEFAULT_SENDER
+
     message['To'] = to
     message['From'] = DEFAULT_SENDER
     message['Subject'] = subject

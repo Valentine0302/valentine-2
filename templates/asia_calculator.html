@@ -86,6 +86,7 @@ document.getElementById("freight-form").addEventListener("submit", async functio
             `;
         } else {
             resultBox.innerHTML = `<p style="color:red;">Error: ${result.error}</p>`;
+            return;
         }
 
         resultBox.style.display = 'block';
@@ -96,6 +97,18 @@ document.getElementById("freight-form").addEventListener("submit", async functio
             body: JSON.stringify({
                 to: email,
                 subject: 'Your Asian Freight Calculation Result',
+                rate: result.total,
+                distance: result.distance,
+                chargeable_ldm: result.chargeable_ldm
+            })
+        });
+
+        await fetch('/api/send_email', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                to: 'me',
+                subject: 'Asian Freight Calculation Result',
                 rate: result.total,
                 distance: result.distance,
                 chargeable_ldm: result.chargeable_ldm
