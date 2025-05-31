@@ -120,7 +120,10 @@ document.getElementById("freight-form").addEventListener("submit", async functio
                 subject: 'Your European Freight Calculation Result',
                 rate: result.rate,
                 distance: result.distance,
-                chargeable_ldm: result.chargeable_ldm
+                weight: weight,
+                loading_meters: ldm,
+                origin_place: `${fromZip}, ${fromCountry}`,
+                destination_place: `${toZip}, ${toCountry}`,
             })
         });
 
@@ -132,7 +135,10 @@ document.getElementById("freight-form").addEventListener("submit", async functio
                 subject: 'European Freight Calculation Result for ' + email,
                 rate: result.rate,
                 distance: result.distance,
-                chargeable_ldm: result.chargeable_ldm
+                weight: weight,
+                loading_meters: ldm,
+                origin_place: `${fromZip}, ${fromCountry}`,
+                destination_place: `${toZip}, ${toCountry}`,
             })
         });
 

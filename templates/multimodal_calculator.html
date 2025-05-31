@@ -95,7 +95,9 @@
                     to: email,
                     subject: 'Your Multimodal Freight Calculation Result',
                     rate: data.total_rate,
-                    distance: data.distance
+                    origin_port: document.querySelector('#origin-port option:checked').textContent,
+                    destination_port: document.querySelector('#destination-port option:checked').textContent,
+                    container_type: document.querySelector('#container-type option:checked').textContent
                 })
             });
 
@@ -106,7 +108,9 @@
                     to: 'me',
                     subject: 'Multimodal Freight Calculation Result for ' + email,
                     rate: data.total_rate,
-                    distance: data.distance
+                    origin_port: document.querySelector('#origin-port option:checked').textContent,
+                    destination_port: document.querySelector('#destination-port option:checked').textContent,
+                    container_type: document.querySelector('#container-type option:checked').textContent
                 })
             });
         });

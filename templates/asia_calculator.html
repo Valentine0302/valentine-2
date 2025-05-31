@@ -99,7 +99,10 @@ document.getElementById("freight-form").addEventListener("submit", async functio
                 subject: 'Your Asian Freight Calculation Result',
                 rate: result.total,
                 distance: result.distance,
-                chargeable_ldm: result.chargeable_ldm
+                loading_meters: result.chargeable_ldm,
+                origin_place: `${data.fromZip}, ${data.fromCountry}`,
+                destination_place: `${asiaCity}, ${asiaCountry}`,
+                weight: data.weight
             })
         });
 
@@ -111,7 +114,10 @@ document.getElementById("freight-form").addEventListener("submit", async functio
                 subject: 'Asian Freight Calculation Result',
                 rate: result.total,
                 distance: result.distance,
-                chargeable_ldm: result.chargeable_ldm
+                loading_meters: result.chargeable_ldm,
+                origin_place: `${data.fromZip}, ${data.fromCountry}`,
+                destination_place: `${asiaCity}, ${asiaCountry}`,
+                weight: data.weight
             })
         });
     } catch (err) {

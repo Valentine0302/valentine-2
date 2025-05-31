@@ -1,18 +1,13 @@
+import os
+import re
+import smtplib
+
 from flask import Blueprint, jsonify, request
 from calculators.europe_calculator import FreightCalculator
 from calculators.multimodal_calculator import MultimodalFreightCalculator
 from calculators.asian_calculator import AsianFreightCalculator
 
 from email.message import EmailMessage
-import base64
-import os
-import re
-
-from google.auth.transport.requests import Request
-from google.oauth2.credentials import Credentials
-from google_auth_oauthlib.flow import InstalledAppFlow
-from googleapiclient.discovery import build
-
 from disposable_email_domains import blocklist
 from core.email_verifiers import verify_email, is_disposable, validate_email
 
@@ -22,10 +17,8 @@ europe_freight_calculator = FreightCalculator()
 asian_freight_calculator = AsianFreightCalculator()
 multimodal_freight_calculator = MultimodalFreightCalculator()
 
-SCOPES = ['https://www.googleapis.com/auth/gmail.send']
-TOKEN_PATH = 'data/token.json'
-CREDENTIALS_PATH = 'data/credentials.json'
-DEFAULT_SENDER = 'onekaden17231@gmail.com'
+DEFAULT_SENDER = 'requests@tspgrupp.ee'
+EMAIL_PASSWORD = 'TsTr25Req'
 
 def validate_postal_code(code: str) -> bool:
     return bool(re.fullmatch(r"[A-Za-z0-9\- ]{3,10}", code))
@@ -103,8 +96,6 @@ def calculate_rate_multimodal():
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
-
-def get_gmail_service():
     creds = None
 
     if os.path.exists(TOKEN_PATH):
@@ -126,21 +117,26 @@ def send_email():
     data = request.get_json()
     to = data.get('to')
     subject = data.get('subject')
-    rate = data.get('rate')
-    distance = data.get('distance')
-    chargeable_ldm = data.get('chargeable_ldm')
 
-    html_body = f"""
-        <h3>Calculation Result</h3>
-        <p><strong>Distance:</strong> {distance} km</p>
-        <p><strong>Chargeable Volume:</strong> {chargeable_ldm} LDM</p>
-        <p><strong>Total Freight Cost:</strong> <span style=\"color:green; font-weight:bold;\">€{rate}</span></p>
-    """
+    mail_strings = {
+        'distance': f'<p><strong>Distance:</strong> to_replace km</p>',
+        'chargeable_ldm': f'<p><strong>Chargeable Volume:</strong> to_replace LDM</p>',
+        'rate': f'<p><strong>Total Freight Cost:</strong> <span style="color:green; font-weight:bold;">€to_replace</span></p>',
+        'container_type': f'<p><strong>Container Type:</strong> to_replace</p>',
+        'origin_port': f'<p><strong>Origin Port:</strong> to_replace</p>',
+        'destination_port': f'<p><strong>Destination Port:</strong> to_replace</p>',
+        'weight': f'<p><strong>Weight:</strong> to_replace kg</p>',
+        'loading_meters': f'<p><strong>Loading Meters:</strong> to_replace m</p>',
+        'origin_place': f'<p><strong>Origin Place:</strong> to_replace</p>',
+        'destination_place': f'<p><strong>Destination Place:</strong> to_replace</p>'
+    }
+
+    html_body = '<h2>Calculation result</h2>\n\n' + '\n'.join([mail_strings[key].replace('to_replace', str(value)) for key, value in data.items() if key in mail_strings])
 
     message = EmailMessage()
     message.set_content("Your freight calculation result is ready.", subtype='plain')
     message.add_alternative(html_body, subtype='html')
-    
+
     if to == 'me':
         to = DEFAULT_SENDER
 
@@ -149,12 +145,10 @@ def send_email():
     message['Subject'] = subject
 
     try:
-        service = get_gmail_service()
-        encoded_message = base64.urlsafe_b64encode(message.as_bytes()).decode()
-        create_message = {'raw': encoded_message}
-
-        result = service.users().messages().send(userId="me", body=create_message).execute()
-        return jsonify({'message': 'Email sent successfully', 'id': result['id']})
+        with smtplib.SMTP_SSL('mail.tspgrupp.ee', 465) as smtp:
+            smtp.login(DEFAULT_SENDER, EMAIL_PASSWORD)
+            smtp.send_message(message)
+        return jsonify({'message': 'Email sent successfully'})
     except Exception as e:
         return jsonify({'error': f'Failed to send email: {str(e)}'}), 500
 
@@ -168,7 +162,7 @@ def send_contact_form():
     company = data.get('company', '').strip()
     message_text = data.get('message', '').strip()
 
-    # Простая валидация обязательных полей
+    # Basic validation
     if not name or not email or not message_text:
         return jsonify({'error': 'Name, email, and message are required.'}), 400
 
@@ -178,7 +172,6 @@ def send_contact_form():
     if is_disposable(email):
         return jsonify({'error': 'Disposable email addresses are not allowed.'}), 400
 
-    # Формируем HTML-тело письма с информацией из формы
     html_body = f"""
     <h2>New Contact Form Submission</h2>
     <p><strong>Name:</strong> {name}</p>
@@ -191,16 +184,15 @@ def send_contact_form():
     message = EmailMessage()
     message.set_content(f"New contact form submission from {name}.", subtype='plain')
     message.add_alternative(html_body, subtype='html')
-    message['To'] = DEFAULT_SENDER  # Отправляем на свой email, чтобы получать заявки
+    message['To'] = DEFAULT_SENDER  # Send to self to receive submissions
     message['From'] = DEFAULT_SENDER
     message['Subject'] = f'Contact Form Submission from {name}'
 
     try:
-        service = get_gmail_service()
-        encoded_message = base64.urlsafe_b64encode(message.as_bytes()).decode()
-        create_message = {'raw': encoded_message}
-        result = service.users().messages().send(userId='me', body=create_message).execute()
-
-        return jsonify({'message': 'Thank you! Your message has been sent.', 'id': result['id']})
+        with smtplib.SMTP_SSL('mail.tspgrupp.ee', 465) as smtp:
+            smtp.login(DEFAULT_SENDER, EMAIL_PASSWORD)
+            smtp.send_message(message)
+        return jsonify({'message': 'Thank you! Your message has been sent.'})
     except Exception as e:
         return jsonify({'error': f'Failed to send email: {str(e)}'}), 500
+    
